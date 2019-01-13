@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/randomly-generated"
+baseurl: ""
 url: "https://RandomlyChristen.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
