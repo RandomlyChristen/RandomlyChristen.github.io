@@ -1,0 +1,25 @@
+$code-font-size: 0.875em;
+$code-bg-color: #272822;
+
+pre,
+code {  // 인라인 코드 스니펫
+  font-size: $code-font-size;
+  border-radius: 10px;
+  background-color: $code-bg-color;  // 코드 스니펫 배경 컬러
+}
+
+code {
+  padding: 1px 5px;
+  background-color: $code-bg-color;  // 하이라이트 배경
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

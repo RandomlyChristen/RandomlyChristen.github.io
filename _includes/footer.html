@@ -1,0 +1,36 @@
+{% if site.theme_settings.katex and page.id %}
+<script src="{{ "/assets/js/katex_init.js" | relative_url }}"></script>
+{% endif %}
+
+<footer class="site-footer">
+    <p class="footer-heading">{{ site.theme_settings.title }}</p>
+
+    <div class="footer-col-half first">
+        {% if site.theme_settings.gravatar %}
+        <a href="{{ site.baseurl }}/">
+            <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme_settings.gravatar }}?s=100" alt=""/>
+        </a>
+        {% elsif site.theme_settings.avatar %}
+        <a href="{{ site.baseurl }}/">
+            <img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt=""/>
+        </a>
+        {% endif %}
+        <h1 class="name">{{ site.theme_settings.name }}</h1>
+        {% if site.theme_settings.email_address %}
+        <a href="mailto:{{ site.theme_settings.email_address }}">{{ site.theme_settings.email_address }}</a>
+        {% endif %}
+    </div>
+
+    <div class="footer-col-half second">
+        {% if site.theme_settings.footer_text %}
+        <p>{{ site.theme_settings.footer_text }}</p>
+        <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> Based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a></p>
+        {% endif %}
+    </div>
+
+    <ul class="footer-icons">
+        {% include icons.html %}
+    </ul>
+</footer>
+
+
