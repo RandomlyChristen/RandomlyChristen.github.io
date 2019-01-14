@@ -19,27 +19,27 @@
     }
 
     function getSearchTerm() {
-      return getQueryVariable(QUERY_VARIABLE_URL_STRING);
+        return getQueryVariable(QUERY_VARIABLE_URL_STRING);
     }
 
     function setSearchBoxValue(searchBoxValue) {
-      document.getElementById(SEARCH_BOX_ID).setAttribute("value", searchBoxValue);
+        document.getElementById(SEARCH_BOX_ID).setAttribute("value", searchBoxValue);
     }
 
     function showNoResultsMessage() {
-      document.getElementById(NO_RESULTS_MESSAGE_ID).style.display = "block";
+        document.getElementById(NO_RESULTS_MESSAGE_ID).style.display = "block";
     }
 
     function setSearchResultsHTML(innerHTML) {
-      var searchResults = document.getElementById(SEARCH_RESULTS_CONTAINER_ID);
-      searchResults.innerHTML = innerHTML;
+        var searchResults = document.getElementById(SEARCH_RESULTS_CONTAINER_ID);
+        searchResults.innerHTML = innerHTML;
     }
 
     function createPostListingHTML(postItem) {
-      var headingHTML = "<h2><a  class='search-link' href='" + postItem.url + "''>" + postItem.title + "</a></h2>";
-      var metaHTML = "<div class='meta'>" + postItem.date + "</div>";
-      var descriptionHTML = "<p>" + postItem.content.substring(0, 150) + "...</p>";
-      return headingHTML + metaHTML + descriptionHTML;
+        var headingHTML = "<h2><a  class='search-link' href='" + postItem.url + "''>" + postItem.title + "</a></h2>";
+        var metaHTML = "<div class='meta'>" + postItem.date + "</div>";
+        var descriptionHTML = "<p>" + postItem.content.substring(0, 150) + "...</p>";
+        return headingHTML + metaHTML + descriptionHTML;
     }
 
     function displaySearchResults(results, store) {
@@ -51,43 +51,43 @@
             }
             setSearchResultsHTML(postsListingHTML);
         } else {
-          showNoResultsMessage();
+            showNoResultsMessage();
         }
     }
 
     function addPostToSearchIndex(lunrIndex, key, postJSON) {
-      lunrIndex.add({
-          "id": key,
-          "title": postJSON.title,
-          "author": postJSON.author,
-          "category": postJSON.category,
-          "content": postJSON.content
-      });
+        lunrIndex.add({
+            "id": key,
+            "title": postJSON.title,
+            "author": postJSON.author,
+            "category": postJSON.category,
+            "content": postJSON.content
+        });
     }
 
     function search(searchTerm) {
-      setSearchBoxValue(searchTerm);
+        setSearchBoxValue(searchTerm);
 
-      var lunrIndex = lunr(function () {
-          this.field("id");
-          this.field("title", {
-              boost: 10
-          });
-          this.field("author");
-          this.field("category");
-          this.field("content");
-      });
+        var lunrIndex = lunr(function () {
+            this.field("id");
+            this.field("title", {
+                boost: 10
+            });
+            this.field("author");
+            this.field("category");
+            this.field("content");
+        });
 
-      for (var key in window.store) {
-        addPostToSearchIndex(lunrIndex, key, window.store[key])
-      }
+        for (var key in window.store) {
+            addPostToSearchIndex(lunrIndex, key, window.store[key])
+        }
 
-      var results = lunrIndex.search(searchTerm);
-      displaySearchResults(results, window.store);
+        var results = lunrIndex.search(searchTerm);
+        displaySearchResults(results, window.store);
     }
 
     var searchTerm = getSearchTerm();
     if (searchTerm) {
-      search(searchTerm);
+        search(searchTerm);
     }
 })();
