@@ -14,9 +14,8 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>여러분들은 왜 블로깅을 하십니꽈아아ㅏㅏㅏㅏㅏ</p>
-
-     <p>전 이 블로그를 뜯어 고치는중에만 크롬 탭이 300개가 되기 때문에...</p>
+     <p>여러분들은 왜 블로깅을 하십니까</p>
+     <p>이 블로그를 뜯어 고치는중에만 크롬 탭이 300개가 되기 때문에</p>
 
      <p>This Page, Powered by <a href="https://jekyllrb.com/">Jekyll</a>, Style Based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</p>
 

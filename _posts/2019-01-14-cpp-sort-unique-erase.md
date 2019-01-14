@@ -1,85 +1,143 @@
 ---
 layout: post
-title: Jekyll 블로그를 만드러 보았당
-tags: jekyll Type-Theme css MarkDown
-feature-img: "assets/img/2019-01-14/1_kFaSuc5rVdJ_fM2c_bHszQ.png"
+title: C++ sort, unique, erase 로 뭘 할 수 있었지??
+tags: C++ sort unique erase stl
+feature-img: "assets/img/2019-01-14/c-introduction.jpg"
 ---
-<code>HTML</code>과 <code>CSS</code> 등은 다시는 보기 싫지만, 나는 내가 다시 볼 것 같은 다른 위대하신 분들의 포스팅이나 Documents를
-Chrome탭에서 쉽게 놓아주지 못한다.
 
-{% include image.html url='/assets/img/2019-01-14/screenshot2019-01-14am12.18.49.png' description='요따만한게 3~4개씩 있으면10분 간격으로 화가 난다' alt='크롬캡쳐' %}
+[백준 2750번] 수 정렬하기. 입력받은 정수를 정렬, 중복제거 하여 출력.
 
-그래서 블로그를 만들어서 그걸 정리해보려고 했다~~ 라는게 정계의 학설...
+간단한 구현 문제인데, 과거에 <code>unique()</code> 와 <code>erase()</code> 를 함께 사용했던 기억이 나서, 이 문제를 요걸로 풀어보기로 했다.
 
-개발자라고 하시는 분들은 <code>username.github.io</code> 같은 도메인의 웹페이지에 블로깅을 하시던데, 나에게 Github는 그냥 과제물을 저따 올려두면
-교수님 칭찬서비스를 받을 수도 있는 정도였다.
+일단 [unique]의 구현부터 살펴보니,
 
-아니 뭐, 어찌 되던 블로그를 만들어야지! 라는 다짐과 이제 나도 블로그하는 개발자 형님들 비스므리한 벌래가 될 수 있을지 모른다는 기대감에 신나게
-시작하였지만...
-
-{% include image.html url='/assets/img/2019-01-14/screenshot2019-01-14am1.21.59.png' description='요까지 오는데 3일이 걸렸다...' alt='IDE캡쳐' %}
-
-써본적도 없는 <code>CSS</code> 는 생각보다(?) 과학적이었는데, 주력이 자바와 같은 C++스타일의 객체지향인 내가 보기에 정적인 View의 스타일링을 위한
-구조라기엔 확실히 객체지향적 설계가 눈에 보였다.
-
-{% include image.html url='/assets/img/2019-01-14/screenshot2019-01-14am1.35.24.png' description='@extends와 도트 연산자 등은 HTML 구조와 연계되어 직관적이고, 리팩토링을 위한 설계가 용이해질것 같다' alt='IDE캡쳐' %}
-
-일단, 이 문서에 쓰인 [Type-Theme]는 반응형 웹디자인을 기반으로 소셜 네트워크 프로필 아이콘, 스타일 수식 지원 등 다양한 기능을 가지고 있다. 예를 들면, 
-$$S_n = a \times \frac{1-r^n}{1-r}$$ 요로코롬.
-
-하지만, 너무 심플하다. 진짜.. <code>Footer</code> 는 죄송하지만 만들다가 만거같아요.. ㅠㅠ
-
-그래서 테마색상을 바꿨다. 그냥 처음엔 아무것도 모르고 <code>페이지 소스 보기</code>에서 바꾸고 싶은 태그를 찾아서 전부
-<code>type-theme.scss</code>에다가 적어주다가,
-
-{% include image.html url='/assets/img/2019-01-14/569091304.76.png' description='읽어보란건-제발-처-읽어보자.png' alt='깃허브 캡' %}
-
-그러고 Footer 를 만들어야 하는데, 정-신-병 걸릴 뻔 했다. 3일만에 당장 이쁘게 반응형으로 설계 하려고 해서 그런가..
-
-크게 Profile 영역과 Description 영역으로 나누고, 오른쪽과 왼쪽 끝에 걸쳐지면서, 화면 크기가 작으면 오른쪽 파트를 아래로 내려가면서 View 가 조정되도록
-하고 싶었다.
-
-{% highlight html %}
-<div class="footer-col-half first">
-    <a href="/">
-        <img class="avatar" src="/assets/img/avatar.png" alt=""/>
-    </a>
-    <h1 class="name">Lee-Su-Gyun</h1>
-    <a href="mailto:random_lee@naver.com">random_lee@naver.com</a>
-</div>
-<!--위: 왼쪽, 아래: 오른쪽-->
-<div class="footer-col-half second">
-    <p>HTML, CSS 등 1도 관심없지만 웹개발자, 디자이너 분들 존경합니다. 이 블로그는 내가 알고싶은것 내가 알아냈지만 언제든지 보면서 오지게 뽕 땡길 수 있는 것만 올립니다.</p>
-    <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> Based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a></p>
-</div>
+{% highlight cpp %}
+template<class ForwardIt>
+ForwardIt unique(ForwardIt first, ForwardIt last)
+{
+    if (first == last)
+        return last;
+ 
+    ForwardIt result = first;
+    while (++first != last) {
+        if (!(*result == *first) && ++result != first) {
+            *result = std::move(*first);
+        }
+    }
+    return ++result;
+}
 {% endhighlight %}
 
-처음엔 <code>inline-block</code> 두 개를 <code>width: 50%</code> 속성을 줘서 해결하려 했으나, 오른쪽 inline-block 은 항상 [아래로] 내려갔다.
+요놈 <code>if (!(*result == *first) && ++result != first)</code> 이 이해가 안되는 부분이었다... 똑같이 <code>first</code>
+와 <code>result</code> 를 증가시키면, 도대체 언제 저 조건이 참이라는 것이지??
 
-inline-block 이 기본적으로 가지는 특성을 <code>width: 49%</code> 같은 꼼수로 해결 할 수 있었으나, 그러면 완벽히 오른쪽으로 안가자나 이런~~ㅅㅂ~~...
-이딴건 1% 라도 용납할 수 없다.
+AND 양쪽을 바꿔 보니 이해가 되었다!!
 
-그렇게 수 많은 시도 끝에 이 테마의 <code>_header.scss</code>를 인용했는데, 각 <code><div></code> 를 <code>width: 50%</code> 로 항상
-일렬로 정렬되게 만들고, 오른쪽 자식의 <code><p></code> 를 <code>float: right</code> 로 항상 오른쪽으로 정렬되게 하는 것이다. 그렇게 하면,
-Description 이 항상 50% 크기의 왼쪽에 밀리는 관계로 오른쪽에 붙어 있으면서, 화면이 줄어들어 오른쪽의 <code>min-width</code>를 유지시킬 수 없으면
-바로 아래로 내려가 왼쪽에 정렬되게 된다.
+AND 양쪽을 바꾸면 문서에 정의된대로 함수가 작동하지 않았다.. 이래서 증감연산자 10극혐.
 
-그렇게 마무리 되는가 싶었지만...
+함수는 다음 변형으로 이해할 수 있다.
 
-[포스트에 사진을 넣는 트릭]을 사용하다가, <code>"/assets/img/logo.png"| relative_url</code> 이 Jekyll 에 의해 생성된 이 포스트의 절대경로를
-찾아와서 <code>http://localhost:4000/2019/01/14/assets/img/logo.png</code> 이딴식으로 접근하는데, 아무리 헤메어 봐도 이해할 수 없었다.
+{% highlight cpp %}
+template<class ForwardIt>
+ForwardIt myUnique(ForwardIt first, ForwardIt last)
+{
+    if (first == last)
+        return last;
 
-하지만 기본적으로 URL 을 <code>root</code> 기반으로 찾아준다는 사실을 알고 있었기 때문에 그냥,
-<code>url='/assets/img/2019-01-14/logo.png'</code> 이런식으로 적어주니 이미지도 잘 찾아오게 되었다.
+    ForwardIt result = first;
+    while (++first != last) {
+        if (!(*result == *first)) {
+            if (++result != first) {
+                *result = std::move(*first);
+            }
+        }
+        cout << (result == first) << endl;
+    }
+    return ++result;
+}
+{% endhighlight %}
 
-[마지막으로 MD 작성 팁]
+AND 연산자의 첫번째 인수가 거짓이면 두번째 인수는 실행하지 않는다. 여기서 "실행" 이라는 애매뽕짝한 표현을 사용한 것은
+증감연산자가 [시퀸스 포인트]에 종속적인 Behavior 를 띄기 때문.
 
-~~이제 진짜 끝~~
+따라서 <code>first</code> 기준, 기존 동일함을 유지했던 값과 다르고, <code>++result</code> 와 다른 포인트의 Iterator 일 때,
+<code>move()</code> 를 통해 그 값을 ["이동"] 시킨다. (해당 함수는 상황에 따라 [무브 시맨틱]에 기반한 구현이 되어 있다.)
 
-{% include image.html url='/assets/img/2019-01-14/screenshot2019-01-14am2.42.50.png' description='머 어쩌라고 난 그렇겐 못한다' alt='깃허브 캡' %}
+즉, <code>first</code> 가 기존과 "unique" 한 지를 검사하고, result 에 unique 한 값을 새로 써나가는 꼬라지다.
+
+하지만 <code>result</code> 의 위치가 바뀔 때 마다, 검사의 기준이 바뀐다 ㅋ (대신 선형 시간). 따라서, 인접하지 않으면서 동일한 두 값에 대해서
+이 녀석은 unique 하다고 판별, 다음 result 위치에 기록해버린다. 이래서, 구현 예시에는 <code>sort</code> 와 함께 쓰고 있다.
+정렬된 컨테이너에선 항상 중복되는 값은 서로 인접한다는게 보장 되기 때문.
+
+또한, 표준 문서는 이 함수의 return 값 뒤로 이어지는 Iterator 가 Container 에서 구체적으로 어떤 값을 Pointing 해야하는지
+명시하고 있지 않는 것 같다.
+
+{% highlight cpp %}
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <cctype>
+ 
+int main() 
+{
+    // remove duplicate elements
+    std::vector<int> v{1,2,3,1,2,3,3,4,5,4,5,6,7};
+    std::sort(v.begin(), v.end()); // 1 1 2 2 3 3 3 4 4 5 5 6 7 
+    auto last = std::unique(v.begin(), v.end());
+    // v now holds {1 2 3 4 5 6 7 x x x x x x}, where 'x' is indeterminate
+    v.erase(last, v.end()); 
+    for (int i : v)
+      std::cout << i << " ";
+    std::cout << "\n";
+}
+{% endhighlight %}
+
+```$xslt
+1 2 3 4 5 6 7
+```
+
+어째되었든, 정렬된 컨테이너의 해당 범위는 완벽하게 unique 하며, 함수는 마지막으로 기록한 지점의 다음 Iterator 를 리턴하는데,
+이 뒤로 <code>end()</code> 가 리턴하는 Iterator 와 함께 <code>erase()</code> 를 부른다.
+
+배열 기반 컨테이너의 <code>erase()</code> 같은 놈들이 어떤 짓을 하는지는 당해보면 알지.
+
+{% highlight cpp %}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> vec = {1, 2, 3, 4, 5, 6, 7};
+    vec.erase(vec.begin() + 2, vec.end() - 2);
+
+    for (int i = 0; i < vec.size(); ++i)
+        cout << vec[i] << " ";
+
+    cout << '\t';
+
+    for (int i = 0; i < vec.capacity(); ++i)
+        cout << vec[i] << " ";
+
+    return 0;
+}
+{% endhighlight %}
+
+```$xslt
+1 2 6 7     1 2 6 7 5 6 7
+```
+
+삭제는 논리적으로만 작동한다. 삭제되는 만큼 뒤에서 값을 복사해 오기때문에 반복적으로 값을 수정해야하는 구현에서 배열기반 컨테이너는 쓸 생각은
+무조건 2순위.
+
+참고로, ~~내가 당해봐서 아는데~~ 모든 원소를 삭제하고 <code>size()</code> 가 <code>0</code> 을 반환한다고 해도,
+<code>front()</code> 나 <code>end()</code> 는 확신할 수 없는 값을 가르키고 있을지 모른다.
 
 
-[Type-Theme]: https://github.com/rohanchandra/type-theme
-[아래로]: https://stackoverflow.com/questions/6871996/two-inline-block-width-50-elements-wrap-to-second-line
-[포스트에 사진을 넣는 트릭]: https://blog.jaeyoon.io/2017/12/jekyll-image.html
-[마지막으로 MD 작성 팁]: https://hashcode.co.kr/questions/1772/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-%EC%9E%91%EC%84%B1-%ED%8C%81
+
+[백준 2750번]: https://www.acmicpc.net/problem/2750
+[unique]: https://en.cppreference.com/w/cpp/algorithm/unique
+["이동"]: https://en.cppreference.com/w/cpp/utility/move
+[시퀸스 포인트]: https://dojang.io/mod/page/view.php?id=757
+[무브 시맨틱]: http://blog.naver.com/PostView.nhn?blogId=poiusky5&logNo=220546171485&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
