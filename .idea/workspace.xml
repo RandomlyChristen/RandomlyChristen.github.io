@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a768e1-bb79-451c-8edf-0432a0aa931b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2019-01-15-best-way-to-calculate-power-of-integer.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/base/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/base/_variables.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +32,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="3" />
+          <entry key="css" value="1" />
           <entry key="gif" value="3" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="37" />
@@ -39,9 +42,9 @@
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="markdown" value="21" />
-          <entry key="md" value="17" />
+          <entry key="md" value="18" />
           <entry key="png" value="33" />
-          <entry key="scss" value="30" />
+          <entry key="scss" value="35" />
           <entry key="ts" value="1" />
           <entry key="xml" value="2" />
           <entry key="yml" value="9" />
@@ -49,13 +52,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="HTML" value="37" />
           <entry key="Image" value="40" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="37" />
+          <entry key="Markdown" value="38" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="SCSS" value="30" />
+          <entry key="SCSS" value="35" />
           <entry key="TypeScript" value="1" />
           <entry key="XML" value="2" />
           <entry key="YAML" value="9" />
@@ -66,8 +70,8 @@
           <entry key="gitignore" value="9" />
           <entry key="html" value="7" />
           <entry key="js" value="51" />
-          <entry key="md" value="5866" />
-          <entry key="scss" value="171" />
+          <entry key="md" value="9707" />
+          <entry key="scss" value="213" />
           <entry key="yml" value="512" />
         </counts>
       </usages-collector>
@@ -75,9 +79,9 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="JavaScript" value="51" />
-          <entry key="Markdown" value="5866" />
+          <entry key="Markdown" value="9707" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SCSS" value="171" />
+          <entry key="SCSS" value="213" />
           <entry key="YAML" value="512" />
         </counts>
       </usages-collector>
@@ -88,18 +92,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="553">
+              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-line="5" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-01-15-best-way-to-calculate-power-of-integer.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="803">
-                <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+              <first_editor relative-caret-position="540">
+                <caret line="151" selection-start-line="151" selection-end-line="151" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -110,8 +126,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-making-post.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-10">
-                <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+              <first_editor relative-caret-position="405">
+                <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               </first_editor>
               <second_editor />
             </state>
@@ -119,31 +135,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/layouts/_index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/base/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -168,6 +163,11 @@
       <find>comments</find>
       <find>header_text</find>
       <find>call</find>
+      <find>quot</find>
+      <find>content</find>
+      <find>blockquote</find>
+      <find>math-</find>
+      <find>blockqu</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/_sass/custom</dir>
@@ -185,14 +185,16 @@
         <option value="$PROJECT_DIR$/_sass/type-theme.scss" />
         <option value="$PROJECT_DIR$/_posts/2019-01-14-making-post.md" />
         <option value="$PROJECT_DIR$/_sass/includes/_tag_list.scss" />
-        <option value="$PROJECT_DIR$/_sass/base/_variables.scss" />
         <option value="$PROJECT_DIR$/_sass/custom/_image.scss" />
         <option value="$PROJECT_DIR$/_sass/layouts/_index.scss" />
         <option value="$PROJECT_DIR$/_sass/layouts/_posts.scss" />
         <option value="$PROJECT_DIR$/assets/js/search.js" />
         <option value="$PROJECT_DIR$/search.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_sass/base/_variables.scss" />
+        <option value="$PROJECT_DIR$/_sass/base/_global.scss" />
+        <option value="$PROJECT_DIR$/_posts/2019-01-15-best-way-to-calculate-power-of-integer.md" />
       </list>
     </option>
   </component>
@@ -284,6 +286,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -320,12 +323,12 @@
       <workItem from="1547185128108" duration="2070000" />
       <workItem from="1547385483731" duration="290000" />
       <workItem from="1547386298224" duration="137000" />
-      <workItem from="1547386447504" duration="23596000" />
+      <workItem from="1547386447504" duration="44463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35429000" />
+    <option name="totallyTimeSpent" value="56296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -357,8 +360,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_sass/base/_lists.scss" />
-    <entry file="file://$PROJECT_DIR$/_sass/base/_grid-settings.scss" />
     <entry file="file://$PROJECT_DIR$/_layouts/archive.html" />
     <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-dummy.markdown" />
     <entry file="file://$PROJECT_DIR$/_sass/_layout.scss" />
@@ -452,13 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_utility.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/type-theme.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -498,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -529,13 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="17064" column="12" selection-start-line="17064" selection-start-column="12" selection-end-line="17064" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/layouts/_posts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -577,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -591,6 +564,30 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/layouts/_posts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_utility.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -603,26 +600,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="553">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4574" selection-start-column="4574" selection-end-column="4574" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-making-post.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-10">
-            <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <first_editor relative-caret-position="405">
+            <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-01-15-best-way-to-calculate-power-of-integer.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="803">
-            <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
+          <first_editor relative-caret-position="540">
+            <caret line="151" selection-start-line="151" selection-end-line="151" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
