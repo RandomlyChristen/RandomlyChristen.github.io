@@ -1,7 +1,13 @@
 figure {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    width: 600px;
+  }
+
   figcaption {
     font-size: 0.8em;
     color: rgba($text-color, .5);
-    text-align: center;
   }
 }

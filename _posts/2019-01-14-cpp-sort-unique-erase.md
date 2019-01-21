@@ -11,7 +11,7 @@ feature-img: "assets/img/2019-01-14/c-introduction.jpg"
 
 일단 [unique]의 구현부터 살펴보니,
 
-{% highlight cpp %}
+```cpp
 template<class ForwardIt>
 ForwardIt unique(ForwardIt first, ForwardIt last)
 {
@@ -26,7 +26,7 @@ ForwardIt unique(ForwardIt first, ForwardIt last)
     }
     return ++result;
 }
-{% endhighlight %}
+```
 
 요놈 <code>if (!(*result == *first) && ++result != first)</code> 이 이해가 안되는 부분이었다... 똑같이 <code>first</code>
 와 <code>result</code> 를 증가시키면, 도대체 언제 저 조건이 참이라는 것이지??
@@ -37,7 +37,7 @@ AND 양쪽을 바꾸면 문서에 정의된대로 함수가 작동하지 않았�
 
 함수는 다음 변형으로 이해할 수 있다.
 
-{% highlight cpp %}
+```cpp
 template<class ForwardIt>
 ForwardIt myUnique(ForwardIt first, ForwardIt last)
 {
@@ -55,7 +55,7 @@ ForwardIt myUnique(ForwardIt first, ForwardIt last)
     }
     return ++result;
 }
-{% endhighlight %}
+```
 
 AND 연산자의 첫번째 인수가 거짓이면 두번째 인수는 실행하지 않는다. 여기서 "실행" 이라는 애매뽕짝한 표현을 사용한 것은
 증감연산자가 [시퀸스 포인트]에 종속적인 Behavior 를 띄기 때문.
@@ -72,7 +72,7 @@ AND 연산자의 첫번째 인수가 거짓이면 두번째 인수는 실행하�
 또한, 표준 문서는 이 함수의 return 값 뒤로 이어지는 Iterator 가 Container 에서 구체적으로 어떤 값을 Pointing 해야하는지
 명시하고 있지 않는 것 같다.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -91,7 +91,7 @@ int main()
       std::cout << i << " ";
     std::cout << "\n";
 }
-{% endhighlight %}
+```
 
 ```$xslt
 1 2 3 4 5 6 7
@@ -102,7 +102,7 @@ int main()
 
 배열 기반 컨테이너의 <code>erase()</code> 같은 놈들이 어떤 짓을 하는지는 당해보면 알지.
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 #include <vector>
 
@@ -122,7 +122,7 @@ int main() {
 
     return 0;
 }
-{% endhighlight %}
+```
 
 ```$xslt
 1 2 6 7     1 2 6 7 5 6 7

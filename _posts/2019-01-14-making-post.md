@@ -39,7 +39,7 @@ $$S_n = a \times \frac{1-r^n}{1-r}$$ 요로코롬.
 크게 Profile 영역과 Description 영역으로 나누고, 오른쪽과 왼쪽 끝에 걸쳐지면서, 화면 크기가 작으면 오른쪽 파트를 아래로 내려가면서 View 가 조정되도록
 하고 싶었다.
 
-{% highlight html %}
+```html
 <div class="footer-col-half first">
     <a href="/">
         <img class="avatar" src="/assets/img/avatar.png" alt=""/>
@@ -52,7 +52,7 @@ $$S_n = a \times \frac{1-r^n}{1-r}$$ 요로코롬.
     <p>HTML, CSS 등 1도 관심없지만 웹개발자, 디자이너 분들 존경합니다. 이 블로그는 내가 알고싶은것 내가 알아냈지만 언제든지 보면서 오지게 뽕 땡길 수 있는 것만 올립니다.</p>
     <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> Based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a></p>
 </div>
-{% endhighlight %}
+```
 
 처음엔 <code>inline-block</code> 두 개를 <code>width: 50%</code> 속성을 줘서 해결하려 했으나, 오른쪽 inline-block 은 항상 [아래로] 내려갔다.
 
