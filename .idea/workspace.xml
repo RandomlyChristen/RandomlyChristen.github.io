@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22a768e1-bb79-451c-8edf-0432a0aa931b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-01-18-std-sort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2019-02-11-memset-note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RandomlyChristen.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-01-14-making-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-01-14-making-post.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/base/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/custom/_image.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/custom/_image.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,33 +20,35 @@
     <session id="-2001341239">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="3" />
+          <entry key="LICENSE" value="2" />
           <entry key="css" value="1" />
           <entry key="gemspec" value="1" />
           <entry key="gif" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="39" />
-          <entry key="ico" value="1" />
+          <entry key="ico" value="2" />
           <entry key="jpg" value="3" />
-          <entry key="js" value="1" />
+          <entry key="js" value="4" />
           <entry key="json" value="2" />
           <entry key="lock" value="1" />
           <entry key="markdown" value="21" />
-          <entry key="md" value="29" />
+          <entry key="md" value="31" />
           <entry key="png" value="35" />
           <entry key="scss" value="37" />
           <entry key="ts" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
           <entry key="yml" value="11" />
         </counts>
       </usages-collector>
@@ -56,14 +56,14 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="39" />
-          <entry key="Image" value="42" />
+          <entry key="Image" value="43" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="49" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Markdown" value="51" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="SCSS" value="37" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
           <entry key="YAML" value="11" />
         </counts>
       </usages-collector>
@@ -72,7 +72,7 @@
           <entry key="gitignore" value="9" />
           <entry key="html" value="7" />
           <entry key="js" value="51" />
-          <entry key="md" value="11861" />
+          <entry key="md" value="13744" />
           <entry key="scss" value="293" />
           <entry key="yml" value="512" />
         </counts>
@@ -81,7 +81,7 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="JavaScript" value="51" />
-          <entry key="Markdown" value="11861" />
+          <entry key="Markdown" value="13744" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="293" />
           <entry key="YAML" value="512" />
@@ -92,11 +92,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-02-11-memset-note.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="840">
+                <caret line="77" column="67" lean-forward="true" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-01-18-std-sort.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <first_editor relative-caret-position="-165">
+                <caret selection-end-line="5" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -158,6 +170,8 @@
         <option value="$PROJECT_DIR$/_posts/2019-01-14-cpp-sort-unique-erase.md" />
         <option value="$PROJECT_DIR$/_posts/2019-01-14-making-post.md" />
         <option value="$PROJECT_DIR$/_posts/2019-01-18-std-sort.md" />
+        <option value="$PROJECT_DIR$/assets/js/katex_init.js" />
+        <option value="$PROJECT_DIR$/_posts/2019-02-11-memset-note.md" />
       </list>
     </option>
   </component>
@@ -177,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,21 +202,11 @@
             <path>
               <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -209,13 +214,6 @@
               <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomlyChristen.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-01-21" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RandomlyChristen.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -227,7 +225,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,12 +272,13 @@
       <workItem from="1547185128108" duration="2070000" />
       <workItem from="1547385483731" duration="290000" />
       <workItem from="1547386298224" duration="137000" />
-      <workItem from="1547386447504" duration="57449000" />
+      <workItem from="1547386447504" duration="58722000" />
+      <workItem from="1548829836940" duration="5434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69282000" />
+    <option name="totallyTimeSpent" value="75989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -312,44 +310,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-dummy4.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-dummy5.markdown" />
-    <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-dummy6.markdown" />
-    <entry file="file://$PROJECT_DIR$/_sass/base/_base.scss" />
-    <entry file="file://$PROJECT_DIR$/posts.html" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-14" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-welcome-to-jekyll.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="227">
-            <caret line="21" selection-start-line="21" selection-end-line="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-11-28-markdown-and-html.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2015-04-18-welcome-to-jekyll.markdown" />
+    <entry file="file://$PROJECT_DIR$/_posts/2014-11-28-markdown-and-html.md" />
     <entry file="file://$PROJECT_DIR$/_includes/post_nav.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -360,9 +323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/assets/img/1_kFaSuc5rVdJ_fM2c_bHszQ.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/img/1_kFaSuc5rVdJ_fM2c_bHszQ.png" />
     <entry file="file://$PROJECT_DIR$/assets/img/2019-01-14/screenshot2019-01-14am12.18.49.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -432,9 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/custom/_code.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -461,25 +419,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_site/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2301">
-          <folding>
-            <element signature="n#style#0;n#header#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2301" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -494,9 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,11 +548,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/katex_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-01-18-std-sort.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <first_editor relative-caret-position="-165">
+            <caret selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-02-11-memset-note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="840">
+            <caret line="77" column="67" lean-forward="true" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
           </first_editor>
           <second_editor />
         </state>
